@@ -1,0 +1,124 @@
+/* Mantiene el video de fondo borroso */
+.videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* Barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 1;
+}
+
+.nav1 img {
+    height: 40px;
+}
+
+.nav2 i, .nav3 ul li a {
+    color: white;
+}
+
+.nav3 ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav3 ul li {
+    margin: 0 15px;
+}
+
+.nav3 ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Sección de Contacto */
+#seccion_contacto {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 60px; /* Ajusta el margen para que el mapa no se superponga a la barra de navegación */
+}
+
+.mapaGoogle {
+    width: 50vw;
+    height: calc(100vh - 60px); /* Ajusta la altura para que se alinee con la pantalla */
+    box-sizing: border-box;
+}
+
+.columnaDatos {
+    width: 50vw;
+    height: calc(100vh - 60px); /* Ajusta la altura para que se alinee con la pantalla */
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+}
+
+.datosContacto, .formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.datosContacto {
+    flex: 1;
+}
+
+.lista_2 .li_titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.li_texto {
+    margin-bottom: 15px;
+}
+
+.formulario {
+    flex: 1;
+}
+
+.formulario form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario span {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4b7bec;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

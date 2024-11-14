@@ -1,0 +1,122 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilo del video de fondo */
+.videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(5px); 
+}
+
+/* Contenedor principal de la sección de funciones */
+#seccion_funciones {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 4rem); /* Ajusta la altura para que el contenido no se superponga con el nav */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding-top: 4rem; /* Añade espacio para que el contenido no toque el borde negro del nav */
+}
+
+/* Estilos de los contenedores de características */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espacio entre las cajas */
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.feature-box {
+    width: 250px;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feature-box i {
+    font-size: 2rem;
+    color: yellow;
+    margin-bottom: 0.5rem;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: white;
+    margin: 0.5rem 0 0;
+}
+
+/* Estilos del menú de navegación */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+/* Estilos del logo en el nav */
+.nav1 {
+    flex: 1; 
+}
+
+.nav1 img {
+    width: 100px;
+    filter: brightness(0) invert(1);
+}
+
+/* Íconos en el nav */
+.nav2 {
+    flex: 1; 
+    text-align: center;
+}
+
+.nav2 i {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 0.5rem;
+}
+
+/* Links de navegación */
+.nav3 {
+    flex: 1; 
+    text-align: right;
+}
+
+.nav3 ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav3 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    white-space: nowrap; 
+}
